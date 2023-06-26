@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="glwidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>0</y>
+      <width>711</width>
+      <height>751</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>350</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rotation</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>490</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Movement</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>370</y>
+      <width>281</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QDial" name="x_rotate">
+         <property name="maximum">
+          <number>359</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDial" name="y_rotate">
+         <property name="maximum">
+          <number>359</number>
+         </property>
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDial" name="z_rotate">
+         <property name="maximum">
+          <number>359</number>
+         </property>
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>x</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>y</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>z</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>510</y>
+      <width>281</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>x</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>y</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>z</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QSlider" name="x_move">
+         <property name="minimum">
+          <number>-99</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="z_move">
+         <property name="minimum">
+          <number>-99</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="y_move">
+         <property name="minimum">
+          <number>-99</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>281</width>
+      <height>325</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Line type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QWidget" name="line_color" native="true"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Points type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1" colspan="2">
+        <widget class="QDoubleSpinBox" name="point_size">
+         <property name="minimum">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Line color</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Points size</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>Points color</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="choose_color_point">
+         <property name="text">
+          <string>Choose color</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QWidget" name="point_color" native="true"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="choose_color_line">
+         <property name="text">
+          <string>Choose color</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Thickness line</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="2">
+        <widget class="QDoubleSpinBox" name="line_size">
+         <property name="minimum">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="2">
+        <widget class="QComboBox" name="point_type">
+         <item>
+          <property name="text">
+           <string>No points</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Circle</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Square</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QComboBox" name="line_type">
+         <item>
+          <property name="text">
+           <string>solid line</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>dotted line</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Choose file</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>Backgroubd color</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QWidget" name="background_color" native="true"/>
+       </item>
+       <item row="7" column="2">
+        <widget class="QPushButton" name="choose_color_background">
+         <property name="text">
+          <string>Choose color</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QComboBox" name="ortho">
+         <item>
+          <property name="text">
+           <string>centre</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ortho</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>zoom</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="scale">
+         <property name="minimum">
+          <number>50</number>
+         </property>
+         <property name="maximum">
+          <number>1000</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextBrowser" name="info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>680</y>
+      <width>261</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>650</y>
+      <width>261</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="gif">
+       <property name="text">
+        <string>Gif</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>Seconds:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTimeEdit" name="seconds">
+       <property name="maximumTime">
+        <time>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>5</second>
+        </time>
+       </property>
+       <property name="currentSection">
+        <enum>QDateTimeEdit::SecondSection</enum>
+       </property>
+       <property name="displayFormat">
+        <string>s</string>
+       </property>
+       <property name="currentSectionIndex">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>620</y>
+      <width>261</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QPushButton" name="screenshot">
+       <property name="text">
+        <string>Screenshot</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="format">
+       <item>
+        <property name="text">
+         <string>png</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>jpeg</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>37</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>glwidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>glwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
